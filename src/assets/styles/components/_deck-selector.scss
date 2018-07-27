@@ -1,0 +1,79 @@
+.deck-selector{
+
+  &__filters{
+    display: flex;
+    justify-content: space-between;
+    background-color: $grey;
+    padding: 1rem;
+
+    &-item{
+      width: 4.4rem;
+      height: 4.4rem;
+      border: 1px solid $grey;
+      border-radius: 100%;
+
+      &--white{
+        background-color: $mtg-white;
+      }
+      &--blue{
+        background-color: $mtg-blue;
+      }
+      &--black{
+        background-color: $mtg-black;
+      }
+      &--red{
+        background-color: $mtg-red;
+      }
+      &--green{
+        background-color: $mtg-green;
+      }
+
+    }
+
+  }
+
+  &__list{
+    padding: 1rem;
+    background-color: $grey;
+  }
+
+  &__item{
+    display: flex;
+    width: 100%;
+    background-color: $white;
+    padding: 1rem;
+    position: relative;
+
+    &-label{
+      width: 100%;
+    }
+
+    &-colors{
+      position: absolute;
+      top: calc(100% - 5px);
+      left: 0;
+      height: 5px;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &-view{
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      height: 4.5rem;
+      width: 4.5rem;
+      background-color: $grey-l;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & + *{
+      margin-top: 1px;
+    }
+
+  }
+
+}

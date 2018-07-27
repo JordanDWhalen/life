@@ -1,0 +1,23 @@
+.gradient{
+
+  &--white{
+    background-color: $mtg-white;
+  }
+
+  &--blue{
+    background-color: $mtg-blue;
+  }
+
+  &--black{
+    background-color: $mtg-black;
+  }
+
+  &--red{
+    background-color: $mtg-red;
+  }
+
+  &--green{
+    background-color: $mtg-green;
+  }
+
+}

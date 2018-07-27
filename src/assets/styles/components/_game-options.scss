@@ -1,0 +1,95 @@
+.game-options{
+
+
+  &__group{
+    width: 100%;
+
+    &-label{
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    & +.game-options__group{
+      margin-top: 3.2rem;
+    }
+
+  }
+
+  &__item{
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 1px;
+    position: relative;
+    height: 4.4rem;
+
+    &-label{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+      transition: $dt;
+      color: $dark-text;
+    }
+
+    &-input{
+      appearance: none;
+      width: 100%;
+      background-color: $grey;
+      height: 100%;
+      margin: 0;
+      outline: none;
+      transition: $dt;
+
+      &:checked{
+
+        background-color: $highlight;
+
+        & + .game-options__item-label{
+          color: $white;
+        }
+
+        & + .game-options__item-label + .game-options__item--hidden{
+          opacity: 1;
+          z-index: 2;
+        }
+
+      }
+
+    }
+
+    &--hidden{
+      position: absolute;
+      width: calc(100% - 1rem);
+      height: calc(100% - 1rem);
+      top: .5rem;
+      left: .5rem;
+      z-index: -1;
+      transition: $dt;
+    }
+
+  }
+
+  &__choices{
+    display: flex;
+
+    &--grid{
+      flex-wrap: wrap;
+
+      .game-options__item{
+        width: calc(50% - 2px);
+        margin: 1px;
+        flex-grow: 0;
+      }
+
+    }
+
+  }
+
+}

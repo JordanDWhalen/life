@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="19px" viewBox="0 0 25 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Personal-Layout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Personal---My-Settings" transform="translate(-335.000000, -501.000000)">
+            <rect fill="#999999" x="0" y="0" width="400" height="800"></rect>
+            <g id="Group" transform="translate(10.000000, 223.000000)" fill="#000000" fill-rule="nonzero">
+                <g id="Deck-Picker" transform="translate(11.000000, 184.000000)">
+                    <g id="Group-15">
+                        <g id="Group-4" transform="translate(10.000000, 82.000000)">
+                            <path d="M316.5,31.001 C309.596,31.001 304,21.499 304,21.499 C304,21.499 309.596,12 316.5,12 C323.403,12 329,21.499 329,21.499 C329,21.499 323.403,31.001 316.5,31.001 Z M316.5,13 C311.116,13 306.424,19.595 305.182,21.499 C306.426,23.402 311.127,30.001 316.5,30.001 C321.872,30.001 326.573,23.404 327.817,21.499 C326.573,19.596 321.872,13 316.5,13 Z M316.5,26.998 C313.462,26.998 311,24.536 311,21.499 C311,18.462 313.462,15.999 316.5,15.999 C319.537,15.999 322,18.462 322,21.499 C322,24.536 319.537,26.998 316.5,26.998 Z M316.5,16.999 C314.015,16.999 312,19.014 312,21.499 C312,23.983 314.015,25.999 316.5,25.999 C318.985,25.999 321,23.983 321,21.499 C321,19.014 318.985,16.999 316.5,16.999 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

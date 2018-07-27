@@ -1,0 +1,20 @@
+$black: #1E252D;
+$white: #fff;
+$offwhite: #F4F6F7;
+
+$grey: #D8D8D8;
+$grey-l: lighten($grey, 10%);
+
+$highlight: #879AFA;
+$highlight--hover: lighten($highlight, 10%);
+$highlight--active: darken($highlight, 10%);
+
+// Text Colors
+$dark-text: $black;
+
+// WUBRG
+$mtg-white: #fff;
+$mtg-blue: #4444C6;
+$mtg-black: #000;
+$mtg-red: #D0021B;
+$mtg-green: #61805E;

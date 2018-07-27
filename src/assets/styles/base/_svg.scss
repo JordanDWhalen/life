@@ -1,0 +1,15 @@
+// Base default styles. Spacing resets for the most part.
+
+svg{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+svg path, svg g{
+  // fill: inherit;
+}

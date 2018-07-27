@@ -1,0 +1,11 @@
+$sans: 'Source Sans Pro', sans-serif;
+
+$body: $sans;
+
+body {
+  font-family: $sans;
+  color: $black;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

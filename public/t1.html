@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <title>TopDecked - Life Tracker</title>
+  <!-- TypeKit -->
+  <link rel="stylesheet" href="assets/styles/application.css" />
+</head>
+
+<body>
+
+<main id="main" class="start-screen">
+
+  <form class="game-options">
+
+    <h1 class="game-options__title page-title">Game Options</h1>
+
+    <section class="game-options__group">
+      <h6 class="game-options__group-label">
+        Most Played
+      </h6>
+      <div class="game-options__choices game-options__choices--grid">
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="most-played" id="most-played-1">
+          <label for="most-played-1" class="game-options__item-label">20HP / 2 Players</label>
+        </div>
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="most-played" id="most-played-1">
+          <label for="most-played-1" class="game-options__item-label">30HP / 2 Players</label>
+        </div>
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="most-played" id="most-played-1">
+          <label for="most-played-1" class="game-options__item-label">40HP / 2 Players</label>
+        </div>
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="most-played" id="most-played-1">
+          <label for="most-played-1" class="game-options__item-label">40HP / 4 Players</label>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="game-options__group">
+      <h6 class="game-options__group-label">
+        Players
+      </h6>
+      <div class="game-options__choices">
+
+        <div class="game-options__item">
+
+          <input type="radio" class="game-options__item-input" name="players" id="players-2">
+          <label for="players-2" class="game-options__item-label">2</label>
+        </div>
+
+        <div class="game-options__item">
+
+          <input type="radio" class="game-options__item-input" name="players" id="players-3">
+          <label for="players-3" class="game-options__item-label">3</label>
+        </div>
+
+        <div class="game-options__item">
+
+          <input type="radio" class="game-options__item-input" name="players" id="players-4">
+          <label for="players-4" class="game-options__item-label">4</label>
+        </div>
+
+        <div class="game-options__item">
+
+          <input type="radio" class="game-options__item-input" name="players" id="players-5">
+          <label for="players-5" class="game-options__item-label">5</label>
+        </div>
+
+        <div class="game-options__item">
+
+          <input type="radio" class="game-options__item-input" name="players" id="players-6">
+          <label for="players-6" class="game-options__item-label">6</label>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="game-options__group">
+      <h6 class="game-options__group-label">
+        Starting Life
+      </h6>
+
+      <div class="game-options__choices">
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="life" id="life-2">
+          <label for="life-2" class="game-options__item-label">20</label>
+        </div>
+
+        <div class="game-options__item">
+
+          <input type="radio" class="game-options__item-input" name="life" id="life-2">
+          <label for="life-2" class="game-options__item-label">30</label>
+        </div>
+
+        <div class="game-options__item">
+
+          <input type="radio" class="game-options__item-input" name="life" id="life-2">
+          <label for="life-2" class="game-options__item-label">40</label>
+        </div>
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="life" id="life-custom">
+          <label for="life-custom" class="game-options__item-label">Custom</label>
+          <input type="text" class="game-options__item--hidden" placeholder="Custom">
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="game-options__group">
+      <h6 class="game-options__group-label">
+        Timer
+      </h6>
+      <div class="game-options__choices">
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="timer" id="timer-1">
+          <label for="timer-1" class="game-options__item-label">Track Time</label>
+        </div>
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="timer" id="timer-2">
+          <label for="timer-2" class="game-options__item-label">Chess Clock</label>
+        </div>
+
+        <div class="game-options__item">
+          <input type="radio" class="game-options__item-input" name="timer" id="timer-3">
+          <label for="timer-3" class="game-options__item-label">None</label>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="deck-selector game-options__group">
+      <h6 class="game-options__group-label">
+        Select A Deck
+      </h6>
+      <div class="deck-selector__filters">
+        <div class="deck-selector__filters-item deck-selector__filters-item--white"></div>
+        <div class="deck-selector__filters-item deck-selector__filters-item--blue"></div>
+        <div class="deck-selector__filters-item deck-selector__filters-item--black"></div>
+        <div class="deck-selector__filters-item deck-selector__filters-item--red"></div>
+        <div class="deck-selector__filters-item deck-selector__filters-item--green"></div>
+      </div>
+      <div class="deck-selector__list">
+        <div class="deck-selector__item">
+          <div class="deck-selector__item-label">None</div>
+        </div>
+        <div class="deck-selector__item">
+          <div class="deck-selector__item-label">EDH: Gonti</div>
+          <div class="deck-selector__item-colors gradient--black" ></div>
+          <div class="deck-selector__item-view">
+            <img src="assets/images/icon_see-more.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button type="submit" name="button" class="button button--primary">Start Game</button>
+
+  </form>
+
+</main>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/application.js"></script>
+</body>
+</html>
+
