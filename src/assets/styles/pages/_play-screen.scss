@@ -1,0 +1,44 @@
+.play-screen{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  &__others{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__user{
+    margin-top: -1rem;
+    height: 100%;
+  }
+
+  &--two-player, &--three-player{
+
+    .play-screen__user{
+      height: calc(100vh - 20.5rem);
+    }
+
+  }
+
+  &--four-player{
+
+    .play-screen__user{
+      height: calc(100vh - 36rem);
+    }
+
+  }
+
+  &--six-player, &--five-player{
+
+    .play-screen__user{
+      height: calc(100vh - 47.5rem);
+    }
+
+  }
+
+
+}
