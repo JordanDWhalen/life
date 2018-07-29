@@ -98,6 +98,21 @@
 
   &--full{
     height: 100%;
+    padding: 0;
+
+    .life-card__user{
+      top: auto;
+      bottom: 0;
+    }
+
+    .life-card__total{
+
+      &-count{
+        font-size: 10rem;
+      }
+
+    }
+
   }
 
 }
