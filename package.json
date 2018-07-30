@@ -1,11 +1,11 @@
 {
-  "name": "thelasallenetwork",
-  "version": "1.0.0",
+  "name": "TopDeckedLifeTracker",
+  "version": "0.1.0",
   "description": "",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git@git.soliddigital.com:lasalle-network/lasalle-redesign.git"
+    "url": "https://github.com/JordanDWhalen/life"
   },
   "scripts": {
     "build": "gulp build",
