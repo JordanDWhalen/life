@@ -6,9 +6,15 @@
   align-items: flex-start;
   align-content: flex-start;
 
+  *::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+  }
+
   &__others{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 
   &__user{
@@ -16,29 +22,84 @@
     height: 100%;
   }
 
-  &--two-player, &--three-player{
+  &--personal{
 
-    .play-screen__user{
-      height: calc(100vh - 20.5rem);
+    &.play-screen{
+      &--two-player, &--three-player{
+
+        .play-screen__user{
+          height: calc(100vh - 22.5rem);
+        }
+
+      }
+
+      &--four-player{
+
+        .play-screen__user{
+          height: calc(100vh - 38rem);
+        }
+
+      }
+
+      &--six-player, &--five-player{
+
+        .play-screen__user{
+          height: calc(100vh - 44.5rem);
+        }
+
+        .play-screen__others{
+
+          .life-card{
+            min-height: 10rem;
+
+            &__total-count{
+              font-size: 2.4rem;
+            }
+
+          }
+
+        }
+
+      }
     }
 
   }
 
-  &--four-player{
+  &--multi{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.35fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "top top top top top top" "mid mid mid mid mid mid" "bot bot bot bot bot bot";
 
-    .play-screen__user{
-      height: calc(100vh - 36rem);
+    .top { grid-area: top; height: 100%; display: flex; }
+
+    .mid { grid-area: mid; height: 100%; }
+
+    .bot { grid-area: bot; height: 100%; display: flex; }
+
+    .menu-bar{
+      width: 100vw;
+      justify-content: space-around;
+      margin: 0;
+
+      .play-control{
+        height: auto;
+        width: auto;
+      }
+
+      &__item{
+        width: 100%;
+      }
+
+    }
+
+    .life-card{
+      height: calc(100% - 2rem);
+      margin: 1rem;
     }
 
   }
-
-  &--six-player, &--five-player{
-
-    .play-screen__user{
-      height: calc(100vh - 47.5rem);
-    }
-
-  }
-
 
 }

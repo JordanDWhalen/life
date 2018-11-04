@@ -1,0 +1,25 @@
+.play-nav{
+  position: fixed;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: 11;
+
+  &__group{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+
+  &__item{
+    padding: 1rem .5rem;
+    background-color: $highlight;
+    color: $white;
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+
+}

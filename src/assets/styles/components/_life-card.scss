@@ -9,6 +9,7 @@
   overflow: auto;
   min-height: 12.5rem;
 
+
   &__wrapper{
     width: 200%;
     display: flex;
@@ -54,13 +55,8 @@
 
   }
 
-  &__settings{
-    margin-top: -3.5rem;
-    width: calc(100vw - 2rem);
-    background-color: $grey;
-  }
-
   &__user{
+    font-size: 1.2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -84,14 +80,10 @@
 
   &--small{
     width: calc(50vw - 1.5rem);
-    margin: 1rem .5rem 0 1rem;
+    margin: 1rem 0;
 
     .life-card__total, .life-card__settings{
       width: calc(50vw - 1.5rem);
-    }
-
-    & + .life-card--small{
-      margin: 1rem 1rem 0 .5rem;
     }
 
   }
@@ -113,6 +105,10 @@
 
     }
 
+  }
+
+  &--active-turn{
+    background-color: $highlight;
   }
 
 }
